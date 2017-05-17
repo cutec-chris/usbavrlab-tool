@@ -1,0 +1,5 @@
+pipeline:
+  build:
+    image: build-lazarus-x64:latest
+    commands:
+      - lazbuild src/usbavrlabtool.lpi
