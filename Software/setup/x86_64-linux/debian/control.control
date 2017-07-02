@@ -1,0 +1,8 @@
+Source: usbavrlab
+Package: usbavrlab
+Version: VERSION
+Section: office
+Priority: optional
+Maintainer: Christian Ulrich <christian@ullihome.de>
+Architecture: ARCH
+Description: A Tool to manage USB AVR Lab.

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=USB AVR Lab Tool
+Type=Application
+Categories=Application;IDE;Development;
+Terminal=false
+Icon[de_DE]=usbavrlabtool.png
+Name[de_DE]=USB AVR Lab Tool
+Exec=usbavrlabtool
+Icon=usbavrlabtool.png
+GenericName[de_DE]=

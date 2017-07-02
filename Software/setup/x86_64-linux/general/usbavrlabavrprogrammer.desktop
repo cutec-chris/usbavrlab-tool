@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=USB AVR Lab Programmer
+Type=Application
+Terminal=false
+Icon[de_DE]=usbavrlabavrprogrammer.png
+Name[de_DE]=USB AVR Lab Programmer
+Exec=usbavrlabavrprogrammer
+Icon=usbavrlabavrprogrammer.png
+GenericName[de_DE]=

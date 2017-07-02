@@ -1,0 +1,5 @@
+*.o
+*.ppu
+Software/output/*
+Software/src/general/lib
+Software/src/backup
