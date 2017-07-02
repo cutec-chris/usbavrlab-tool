@@ -36,9 +36,9 @@
         <LaunchingApplication PathPlusParams="\usr\bin\sudo $(TargetCmdLine)"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="5">
+    <RequiredPackages Count="4">
       <Item1>
-        <PackageName Value="general_nogui"/>
+        <PackageName Value="general"/>
       </Item1>
       <Item2>
         <PackageName Value="laz_synapse"/>
@@ -48,17 +48,13 @@
         <MinVersion Major="1" Valid="True"/>
       </Item3>
       <Item4>
-        <PackageName Value="general"/>
-      </Item4>
-      <Item5>
         <PackageName Value="LCL"/>
-      </Item5>
+      </Item4>
     </RequiredPackages>
     <Units Count="24">
       <Unit0>
         <Filename Value="usbavrlabtool.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <CursorPos X="2" Y="14"/>
         <UsageCount Value="27"/>
@@ -117,9 +113,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uBootloader"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="330"/>
-        <CursorPos X="16" Y="351"/>
+        <TopLine Value="43"/>
+        <CursorPos X="71" Y="64"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -359,7 +356,7 @@
       </Position27>
       <Position28>
         <Filename Value="usbavrlabtool.lpr"/>
-        <Caret Line="14" Column="3"/>
+        <Caret Line="14" Column="2"/>
       </Position28>
     </JumpHistory>
   </ProjectOptions>

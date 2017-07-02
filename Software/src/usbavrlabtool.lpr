@@ -7,7 +7,7 @@ uses
   cthreads,
   {.$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, umain, uIntfStrConsts, general, general_nogui, laz_synapse, uI2CLogger,
+  Forms, general, umain, uIntfStrConsts, laz_synapse, uI2CLogger,
   uUSBasp, uBitbanging, uBootloader, libusb, uToolHelp, TurboPowerIPro,
   uLibUSBDevice, uUSBSerialDevice;
 
