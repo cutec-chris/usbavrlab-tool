@@ -1,0 +1,6 @@
+[submodule "Software/components/synapse"]
+	path = Software/components/synapse
+	url = https://github.com/cutec-chris/Ararat-Synapse.git
+[submodule "Software/components/general"]
+	path = Software/components/general
+	url = https://github.com/cutec-chris/general.git

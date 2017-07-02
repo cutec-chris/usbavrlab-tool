@@ -1,7 +1,7 @@
 object fBootloader: TfBootloader
-  Left = 423
+  Left = 422
   Height = 396
-  Top = 173
+  Top = 148
   Width = 411
   ActiveControl = pcMain
   BorderIcons = []
@@ -11,7 +11,7 @@ object fBootloader: TfBootloader
   ClientWidth = 411
   Color = clWindow
   OnShow = FormShow
-  LCLVersion = '0.9.29'
+  LCLVersion = '1.7'
   object pcMain: TPageControl
     Left = 0
     Height = 212
@@ -23,53 +23,56 @@ object fBootloader: TfBootloader
     TabOrder = 0
     object tsLoad: TTabSheet
       Caption = 'Flash'
-      ClientHeight = 186
-      ClientWidth = 403
+      ClientHeight = 177
+      ClientWidth = 405
       object lUserFirmware: TLabel
         Left = 28
-        Height = 14
-        Top = 140
-        Width = 86
+        Height = 17
+        Top = 128
+        Width = 102
         Anchors = [akLeft, akBottom]
         Caption = 'Benutzerfirmware'
         ParentColor = False
       end
       object lPageSize: TLabel
         Left = 8
-        Height = 14
+        Height = 17
         Top = 18
-        Width = 63
+        Width = 73
         Caption = 'Seitengrösse'
         ParentColor = False
       end
       object lController: TLabel
         Left = 8
-        Height = 14
+        Height = 17
         Top = 2
-        Width = 48
+        Width = 56
         Caption = 'Controller'
         ParentColor = False
       end
       object lFirmware: TLabel
         Left = 28
-        Height = 14
+        Height = 17
         Top = 40
-        Width = 50
+        Width = 59
         Caption = 'Firmwares'
         ParentColor = False
       end
       object lbPrograms: TListBox
         Left = 28
-        Height = 76
+        Height = 67
         Top = 56
-        Width = 234
+        Width = 236
         Anchors = [akTop, akLeft, akRight, akBottom]
         ItemHeight = 0
         OnSelectionChange = lbProgramsSelectionChange
+        Options = [lboDrawFocusRect]
+        ScrollWidth = 234
         TabOrder = 0
+        TopIndex = -1
       end
       object ProgressBar1: TProgressBar
-        Left = 271
+        Left = 273
         Height = 16
         Hint = 'Fortschritt'
         Top = 112
@@ -78,7 +81,7 @@ object fBootloader: TfBootloader
         TabOrder = 1
       end
       object bProgram: TBitBtn
-        Left = 271
+        Left = 273
         Height = 30
         Hint = 'Programmierung starten'
         Top = 72
@@ -122,15 +125,14 @@ object fBootloader: TfBootloader
           CC350000BE280000B4000000A7000000A8460A21B9E80611ABB60207A6000208
           A7000208A8000208A8000208A8000208A8000208A8000208A800
         }
-        NumGlyphs = 0
         OnClick = bProgramClick
         TabOrder = 2
       end
       object feOwnFirmware: TFileNameEdit
         Left = 28
-        Height = 21
-        Top = 158
-        Width = 211
+        Height = 27
+        Top = 143
+        Width = 213
         OnAcceptFileName = feOwnFirmwareAcceptFileName
         DialogOptions = []
         Filter = 'Intel Hex File (*.hex)|*.hex'
@@ -143,7 +145,7 @@ object fBootloader: TfBootloader
         TabOrder = 3
       end
       object bStart: TBitBtn
-        Left = 202
+        Left = 204
         Height = 32
         Hint = 'Firmware starten'
         Top = 2
@@ -187,15 +189,14 @@ object fBootloader: TfBootloader
           21CB8E1C00529123000892250000942A00009229000092280000952E00009329
           000092290000912A0000942E0000922B0000902A000096300000
         }
-        NumGlyphs = 0
         OnClick = bStartClick
         TabOrder = 4
       end
     end
     object tsOptions: TTabSheet
       Caption = 'Optionen'
-      ClientHeight = 186
-      ClientWidth = 403
+      ClientHeight = 177
+      ClientWidth = 405
       TabVisible = False
       object lISPSpeed: TLabel
         Left = 12
@@ -219,7 +220,7 @@ object fBootloader: TfBootloader
         Top = 26
         Width = 214
         Anchors = [akTop, akLeft, akRight]
-        ItemHeight = 13
+        ItemHeight = 0
         Items.Strings = (
           '1 khz'
           '93,75 khz'
@@ -258,7 +259,7 @@ object fBootloader: TfBootloader
         ChildSizing.Layout = cclLeftToRightThenTopToBottom
         ChildSizing.ControlsPerLine = 1
         ClientHeight = 80
-        ClientWidth = 210
+        ClientWidth = 212
         Items.Strings = (
           'STK500'
           'AVR910'

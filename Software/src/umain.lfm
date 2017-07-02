@@ -1,32 +1,32 @@
 object fMain: TfMain
-  Left = 368
+  Left = 367
   Height = 482
-  Top = 133
+  Top = 108
   Width = 653
   Caption = 'USB AVR Lab Tool'
-  ClientHeight = 482
+  ClientHeight = 459
   ClientWidth = 653
   Menu = MainMenu1
   OnClose = FormClose
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
   OnShow = FormShow
-  LCLVersion = '1.1'
+  LCLVersion = '1.7'
   object StatusBar: TStatusBar
     Left = 0
-    Height = 21
-    Top = 461
+    Height = 25
+    Top = 457
     Width = 653
     Panels = <>
   end
   object pDestination: TPanel
     Left = 238
-    Height = 461
+    Height = 457
     Top = 0
     Width = 415
     Align = alClient
     BevelOuter = bvNone
-    ClientHeight = 461
+    ClientHeight = 457
     ClientWidth = 415
     TabOrder = 0
     object pBootmode: TPanel
@@ -44,7 +44,7 @@ object fMain: TfMain
         Left = 10
         Height = 30
         Top = 8
-        Width = 392
+        Width = 388
         Anchors = [akTop, akLeft, akRight]
         Caption = 'In Bootmodus versetzen'
         Glyph.Data = {
@@ -89,7 +89,7 @@ object fMain: TfMain
     end
     object pChild: TPanel
       Left = 0
-      Height = 386
+      Height = 382
       Top = 75
       Width = 415
       Align = alClient
@@ -113,19 +113,19 @@ object fMain: TfMain
   end
   object pSelect: TPanel
     Left = 0
-    Height = 461
+    Height = 457
     Top = 0
     Width = 233
     Align = alLeft
     BevelOuter = bvNone
-    ClientHeight = 461
+    ClientHeight = 457
     ClientWidth = 233
     TabOrder = 1
     object tvProgrammer: TTreeView
       Left = 8
-      Height = 446
+      Height = 438
       Top = 8
-      Width = 216
+      Width = 212
       Anchors = [akTop, akLeft, akRight, akBottom]
       DefaultItemHeight = 64
       Images = ImageList2
@@ -139,7 +139,7 @@ object fMain: TfMain
   end
   object Splitter1: TSplitter
     Left = 233
-    Height = 461
+    Height = 457
     Top = 0
     Width = 5
   end
@@ -3275,4 +3275,4 @@ object fMain: TfMain
       FF00FFFFFF00FFFFFF00FFFFFF00
     }
   end
-end
+end

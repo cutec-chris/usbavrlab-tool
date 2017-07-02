@@ -102,7 +102,7 @@ begin
       fs:=TFileStream.Create(aName,fmOpenRead);
       ss := TStringstream.Create('');
       ss.CopyFrom(fs,0);
-      tmp := UTF8ToSys(ss.DataString);
+      tmp := (ss.DataString);
       ss.Free;
       fs.Free;
       ss := TStringStream.Create(tmp);
@@ -119,7 +119,7 @@ begin
   else
     begin
       NewHtml := TSimpleIpHtml.Create;
-      sStream := TStringStream.Create('<html><body><p>'+UTF8ToSys(strNoHelp)+'</p></body></html>');
+      sStream := TStringStream.Create('<html><body><p>'+(strNoHelp)+'</p></body></html>');
       NewHtml.LoadFromStream(sStream);
       sStream.Free;
     end;
@@ -130,4 +130,4 @@ initialization
   {$I utoolhelp.lrs}
 
 end.
-
+

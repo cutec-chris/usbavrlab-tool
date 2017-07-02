@@ -79,7 +79,7 @@ var
 implementation
 
 uses uBootloader,uBitbanging,uUSBasp,uI2CLogger,uToolHelp
-     ,uInfo,uLibUSBDevice,uUSBSerialDevice,htmlconvert;
+     ,uInfo,uLibUSBDevice,uUSBSerialDevice{,htmlconvert};
 
 { TfMain }
 
@@ -109,8 +109,8 @@ begin
   Width := StrToIntDef(Properties.StoredValue['WIDTH'],Width);
   pSelect.Width := StrToIntDef(Properties.StoredValue['HDIVIDER'],pSelect.Width);
   sl := TStringList.Create;
-  if FileExistsUTF8(AppendPathDelim(AppendPathDelim(ProgramDirectory) + 'languages')+'languages.txt') then
-    sl.LoadFromFile(UTF8ToSys(AppendPathDelim(AppendPathDelim(ProgramDirectory) + 'languages')+'languages.txt'));
+  if FileExists(AppendPathDelim(AppendPathDelim(ProgramDirectory) + 'languages')+'languages.txt') then
+    sl.LoadFromFile((AppendPathDelim(AppendPathDelim(ProgramDirectory) + 'languages')+'languages.txt'));
   for i := 0 to sl.Count-1 do
     begin
       NewMItem := TMenuItem.Create(nil);
@@ -119,7 +119,7 @@ begin
       NewMItem.OnClick :=@NewMItemClick;
       NewMItem.GroupIndex := 11;
       miLanguage.Add(NewMItem);
-      if UTF8UpperCase(NewMItem.Caption) = UTF8UpperCase(Properties.StoredValue['LANGUAGE']) then
+      if UpperCase(NewMItem.Caption) = UpperCase(Properties.StoredValue['LANGUAGE']) then
         begin
           NewMItem.Checked := True;
           Language := Properties.StoredValue['LANGUAGE'];
@@ -438,11 +438,11 @@ end;
 
 procedure TfMain.SetLanguage(lang : string);
 begin
-  LoadLanguage(Lang);
+  //TODO:LoadLanguage(Lang);
 end;
 
 initialization
   {$I umain.lrs}
 
 end.
-
+

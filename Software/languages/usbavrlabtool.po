@@ -57,12 +57,13 @@ msgstr ""
 msgid "Speichern"
 msgstr ""
 
-#: tfbootloader.esoftwareversion.text
-msgid "2.0a"
+#: tfbootloader.caption
+msgctxt "tfbootloader.caption"
+msgid "fBootloader"
 msgstr ""
 
-#: tfbootloader.fbootloader.caption
-msgid "fBootloader"
+#: tfbootloader.esoftwareversion.text
+msgid "2.0a"
 msgstr ""
 
 #: tfbootloader.lcontroller.caption

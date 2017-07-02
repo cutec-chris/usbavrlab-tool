@@ -61,7 +61,7 @@ var
 
 implementation
 
-uses uMain,uIntfStrConsts,Utils,uToolHelp,uLibUsbDevice,htmlconvert,uInfo;
+uses uMain,uIntfStrConsts,Utils,uToolHelp,uLibUsbDevice{,htmlconvert},uInfo;
 
 { TfBootloader }
 
@@ -236,7 +236,7 @@ begin
     begin
       sl := TStringList.Create;
       sl.LoadFromFile(fToolHelp.Filename);
-      sl.Text:=HTMLtoTXT(sl.text);
+      //TODO:sl.Text:=HTMLtoTXT(sl.text);
       while (sl.Count > 0) and (uppercase(trim(sl[0])) <> 'BETRIEBSYSTEME') do
         sl.Delete(0);
       if (sl.Count > 0) and (uppercase(trim(sl[0])) = 'BETRIEBSYSTEME') then
@@ -348,7 +348,7 @@ begin
   if fMain.tvProgrammer.Selected = nil then
     exit;
   StartAddress := 99999999;
-  AssignFile(f,UTF8ToSys(Filename));
+  AssignFile(f,(Filename));
   Reset(f);
   while not EOF(f) do
     begin
@@ -440,4 +440,4 @@ initialization
   {$I ubootloader.lrs}
 
 end.
-
+

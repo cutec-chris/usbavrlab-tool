@@ -7,8 +7,8 @@ uses
   cthreads,
   {.$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, umain, uIntfStrConsts, general, laz_synapse, uI2CLogger, uUSBasp,
-  uBitbanging, uBootloader, libusb, uToolHelp, TurboPowerIPro,
+  Forms, umain, uIntfStrConsts, general, general_nogui, laz_synapse, uI2CLogger,
+  uUSBasp, uBitbanging, uBootloader, libusb, uToolHelp, TurboPowerIPro,
   uLibUSBDevice, uUSBSerialDevice;
 
 {$R usbavrlabtool.res}
@@ -23,4 +23,4 @@ begin
   Application.CreateForm(TfToolHelp, fToolHelp);
   Application.Run;
 end.
-
+
